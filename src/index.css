@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+*{
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #2E2E2E;
+}
+/* #Project{
+    margin-left: 2rem;
+    object-fit: cover;
+    width: 95%;
+    height: 100vh;
+    /* opacity: 50%; */
+    /* background-image: url(./assets/header.png); }
+*/ 
