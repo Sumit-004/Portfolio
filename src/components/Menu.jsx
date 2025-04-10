@@ -13,7 +13,7 @@ const style = {
 const Menu = () => {
     return (
         <>
-            <div style={style} className='min-h-[400px] md:min-h-[500px] mx-4 md:m-[2rem] md:mr-8 rounded-2xl flex flex-col md:flex-row justify-center md:justify-evenly items-center p-4 gap-8 md:gap-0'>
+            <div style={style} className='my-4 min-h-[400px] md:min-h-[500px] mx-4 md:m-[2rem] md:mr-8 rounded-2xl flex flex-col md:flex-row justify-center md:justify-evenly items-center p-4 gap-8 md:gap-4'>
                 <div className='w-full md:w-1/2 lg:w-1/3 text-zinc-800 order-2 md:order-1'>
                     <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold'>
                         <TextChange />

@@ -5,6 +5,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdLocalPhone } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
+import { IoIosArrowDropupCircle } from "react-icons/io";
+
 
 const Footer = () => {
   return (
@@ -31,9 +33,12 @@ const Footer = () => {
             <button type='button' className='flex items-center justify-center px-4 py-2 mt-3 rounded-2xl bg-violet-700 text-base md:text-xl text-white hover:bg-violet-500 cursor-pointer'>Send</button>
           </div>
         </div>
-    
+        <p className='fixed bottom-20 right-14 text-4xl text-white'>
+        <a className='hover:text-amber-200' href="Arrow"><IoIosArrowDropupCircle /></a>
+      </p>
       </div>
       <div className='text-white bg-neutral-700 flex items-center justify-center p-4 text-sm md:text-base text-center'><p>Copyright 2004-2025 by Sumit. All Rights Reserved. This Portfolio is Powered by Sumit.</p></div>
+      
     </>
   )
 }
