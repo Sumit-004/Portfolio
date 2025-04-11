@@ -24,7 +24,7 @@ const Header = () => {
     }
 
     return (
-        <header id='Arrow' className="bg-[#bbbab5] rounded-2xl text-zinc-800 flex items-center justify-between p-4 md:p-0 mx-8 md:h-25 relative">
+        <header id="Arrow" className="bg-[#bbbab5] rounded-2xl text-zinc-800 flex items-center justify-between p-4 md:p-0 mx-8 md:h-25 relative">
             <h1 className='text-2xl md:text-4xl font-bold ml-4 md:ml-20'>Portfolio</h1>
             
             {/* Desktop Navigation */}
@@ -32,7 +32,7 @@ const Header = () => {
                 <ul className='flex gap-8 text-xl items-center mr-20'>
                     <li><a className='flex items-center gap-3 hover:text-gray-600' href="#About"><User />About Me</a></li>
                     <li><a className='flex items-center gap-3 hover:text-gray-600' href="#Skills"><CodeXml />Skills</a></li>
-                    <li><a className='flex items-center gap-3 hover:text-gray-600' href=""><FolderOpenDot />Projects</a></li>
+                    <li><a className='flex items-center gap-3 hover:text-gray-600' href="#Projects"><FolderOpenDot />Projects</a></li>
                     <li><a className='flex items-center gap-3 hover:text-gray-600' href="#Footer"><Phone />Contact</a></li>
                 </ul>
             </nav>

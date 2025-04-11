@@ -23,7 +23,7 @@ const Skills = () => {
             <h4 className='font-bold'><SiTailwindcss  className='text-blue-600 text-7xl' />TailwindCSS</h4>
           </div>
         </div>
-        <div className='bg-indigo-300 w-1/2 h-dvh'>
+        <div className=' w-1/2 h-dvh'>
           <div>
             
           </div>

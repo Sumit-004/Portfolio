@@ -17,7 +17,7 @@ const Footer = () => {
             <h1 className='text-2xl md:text-4xl font-bold flex justify-center'>Contact</h1>
             <p className='text-base md:text-xl mt-4 md:mt-8 flex items-center gap-3'><MdLocalPhone />Phone: +91 9520410011</p>
             <p className='text-base md:text-xl mt-2 flex items-center gap-3'><IoIosMail />E-mail: sh.sumit2004@gmail.com</p>
-            
+
             <div id="contact" className='mt-8 md:mt-16 text-xl md:text-3xl flex items-center justify-center gap-4 md:gap-10'>
               <h2><a className='hover:text-gray-900' href="https://github.com/Sumit-004"><FaGithub /></a></h2>
               <h2><a className='hover:text-gray-900' href="https://www.instagram.com/im_sumit004?igsh=azJxcjl5NWlraDRt"><FaInstagram /></a></h2>
@@ -26,19 +26,54 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
-        <div className='w-full md:w-3/7 mt-8 md:mt-0 md:border-l-3'>
+
+        <div id="form" className='w-full md:w-3/7 mt-8 md:mt-0 md:border-l-3'>
           <div className='h-auto w-full md:w-2/3 bg-gray-300 text-neutral-900 md:ml-12 rounded-2xl p-4 md:p-6 mx-auto'>
-            <textarea placeholder="Leave a comment..." id="comment" className='overflow-hidden p-3 w-full min-h-[120px]'></textarea>
+            {/* <form action="https://formspree.io/f/xgvarbkp" method='POST'>
+           <input type="text" placeholder='Enter Your Comment....' required />
+           <input type="email" placeholder='Enter Your E-mail' required/>
+            <textarea placeholder="Leave a comment..." id="comment" className='overflow-hidden p-3 w-full min-h-[120px]' required></textarea>
             <button type='button' className='flex items-center justify-center px-4 py-2 mt-3 rounded-2xl bg-violet-700 text-base md:text-xl text-white hover:bg-violet-500 cursor-pointer'>Send</button>
+            </form> */}
+            
+            <form action='https://formspree.io/f/mgvarbgy' method='POST' className="space-y-4">
+              <div className='flex flex-col md:flex-row md:gap-4 space-y-4 md:space-y-0'>
+                <input 
+                  className='w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500'
+                  required
+                  type="text" 
+                  placeholder='Enter Your Name...' 
+                  name='username' />
+                <input
+                  className='w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500'
+                  required
+                  type="email" 
+                  placeholder='xyz@gmail.com' 
+                  name='email' />
+              </div>
+              <textarea 
+                className='w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500 min-h-[120px]'
+                required
+                name="messeage" 
+                placeholder='Message'></textarea>
+              <div className="flex justify-center">
+                <button 
+                  className='px-6 py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-full transition-colors duration-300'
+                  type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
         </div>
         <p className='fixed bottom-20 right-14 text-4xl text-white'>
-        <a className='hover:text-amber-200' href="Arrow"><IoIosArrowDropupCircle /></a>
-      </p>
+
+          <a className='hover:text-amber-200 scroll-smooth ' href="Arrow"> <IoIosArrowDropupCircle /> </a>
+
+        </p>
       </div>
       <div className='text-white bg-neutral-700 flex items-center justify-center p-4 text-sm md:text-base text-center'><p>Copyright 2004-2025 by Sumit. All Rights Reserved. This Portfolio is Powered by Sumit.</p></div>
-      
+
     </>
   )
 }
