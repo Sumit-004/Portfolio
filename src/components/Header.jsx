@@ -50,9 +50,9 @@ const Header = () => {
             {isMobile && isMenuOpen && (
                 <div className="absolute top-full left-0 right-0 bg-[#bbbab5] rounded-b-2xl shadow-lg z-10">
                     <ul className="flex flex-col gap-4 p-4 text-xl">
-                        <li><a className='flex items-center gap-3 hover:text-gray-600' href="" onClick={toggleMenu}><User />About Me</a></li>
+                        <li><a className='flex items-center gap-3 hover:text-gray-600 hover:underline' href="" onClick={toggleMenu}><User />About Me</a></li>
                         <li><a className='flex items-center gap-3 hover:text-gray-600' href="#Skills" onClick={toggleMenu}><Atom />Skills</a></li>
-                        <li><a className='flex items-center gap-3 hover:text-gray-600' href="" onClick={toggleMenu}><FolderOpenDot />Projects</a></li>
+                        <li><a className='flex items-center gap-3 hover:text-gray-600' href="#Projects" onClick={toggleMenu}><FolderOpenDot />Projects</a></li>
                         <li><a className='flex items-center gap-3 hover:text-gray-600' href="#Footer" onClick={toggleMenu}><Phone />Contact</a></li>
                     </ul>
                 </div>

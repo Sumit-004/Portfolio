@@ -33,10 +33,10 @@ const Menu = () => {
                 
                 <div className='w-full md:w-auto flex md:items-center justify-center md:justify-end order-3'>
                     <div id="contact" className='text-3xl md:text-4xl flex flex-row md:flex-col gap-6 md:gap-10'>
-                        <h2><a className='hover:text-gray-700' href="https://github.com/Sumit-004"><FaGithub /></a></h2>
-                        <h2><a className='hover:text-gray-700' href="https://www.instagram.com/im_sumit004?igsh=azJxcjl5NWlraDRt"><FaInstagram /></a></h2>
-                        <h2><a className='hover:text-gray-700' href=""><FaXTwitter /></a></h2>
-                        <h2><a className='hover:text-gray-700' href=""><FaLinkedin /></a></h2>
+                        <h2><a className='hover:text-gray-800' href="https://github.com/Sumit-004"><FaGithub /></a></h2>
+                        <h2><a className='hover:text-red-600' href="https://www.instagram.com/im_sumit004?igsh=azJxcjl5NWlraDRt"><FaInstagram /></a></h2>
+                        <h2><a className='hover:text-gray-800' href=""><FaXTwitter /></a></h2>
+                        <h2><a className='hover:text-blue-800' href=""><FaLinkedin /></a></h2>
                     </div>
                 </div>
             </div>

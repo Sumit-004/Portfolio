@@ -19,3 +19,20 @@ body{
     /* opacity: 50%; */
     /* background-image: url(./assets/header.png); }
 */ 
+#Skills{
+    position: relative;
+    z-index: 1;
+    
+}
+#Skills::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(./assets/bgImg.webp);
+    background-size: cover;
+    border-radius: 1rem;
+    opacity: 50%;
+    z-index: -1;
+  }
+
+  /* bg-[url(./assets/bgImg.webp)]  */

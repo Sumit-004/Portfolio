@@ -10,26 +10,32 @@ import { SiTailwindcss } from "react-icons/si";
 
 const Skills = () => {
   return (
-    
-      <div id="Skills" className='bg-[url(./assets/header.png)] object-cover ml-8 h-dvh m-[2rem] rounded-2xl flex items-center justify-center'>
-        <div className="w-1/2 h-dvh mt-40">
-          <div className=' flex items-center justify-center gap-14'>
-            <h4 className='font-bold'><FaHtml5 className='text-red-800 text-7xl' />HTML</h4>
-            <h4 className='font-bold'><FaCss3 className='text-blue-800 text-7xl' />CSS</h4>
-            <h4 className='font-bold'><FaJs className='text-yellow-500 text-7xl' />JavaScript</h4>
-          </div>
-          <div className=' flex items-center justify-center gap-14 mt-10'>
-            <h4 className='font-bold'><FaReact className='text-blue-400 text-7xl' />ReactJS</h4>
-            <h4 className='font-bold'><SiTailwindcss  className='text-blue-600 text-7xl' />TailwindCSS</h4>
-          </div>
+
+    <div id="Skills" className='ml-8 m-[2rem] flex flex-col md:flex-col items-center justify-center md:h-dvh h-auto md:ml-8 md:m-[2rem]'>
+      <div className="w-full md:w-1/2 md:h-dvh mt-20 md:mt-20">
+        <div className='flex flex-col md:flex-row md:items-center md:justify-center gap-8 md:gap-14'>
+          <h4 className='font-bold text-gray-100 text-4xl md:text-4xl sm:6xl flex items-center gap-2'><FaHtml5 className='text-red-800' />HTML</h4>
+          <h4 className='font-bold text-gray-100 text-4xl md:text-4xl sm:6xl flex items-center gap-2'><FaCss3 className='text-blue-800' />CSS</h4>
+          <h4 className='font-bold text-gray-100 text-4xl md:text-4xl sm:6xl flex items-center gap-2'><FaJs className='text-yellow-500' />JavaScript</h4>
         </div>
-        <div className=' w-1/2 h-dvh'>
-          <div>
-            
-          </div>
+        <div className='flex flex-col md:flex-row md:items-center md:justify-center gap-8 md:gap-14 mt-6 md:mt-10'>
+          <h4 className='font-bold text-gray-100 text-4xl md:text-4xl sm:6xl flex items-center gap-2'><FaReact className='text-blue-400' />React</h4>
+          <h4 className='font-bold text-gray-100 text-4xl md:text-4xl sm:6xl flex items-center gap-2'><SiTailwindcss className='text-blue-600' />Tailwind</h4>
         </div>
       </div>
-    
+      <div className='w-full md:w-1/2 md:h-dvh flex justify-center mt-10 md:mt-0'>
+        <div>
+          <ul className="text-gray-100 text-[1.2rem] md:text-[1.5rem] space-y-2">
+            <li>**Frontend Development** <br />
+              - HTML5, CSS3 (Flexbox, Grid), JavaScript (ES6+), React (Hooks, Context API)</li>
+            <li>**Tools & Technologies** <br />
+              - Git & GitHub, npm/yarn, VS Code, Chrome DevTools, Responsive Design
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   )
 }
 

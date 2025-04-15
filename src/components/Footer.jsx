@@ -19,10 +19,10 @@ const Footer = () => {
             <p className='text-base md:text-xl mt-2 flex items-center gap-3'><IoIosMail />E-mail: sh.sumit2004@gmail.com</p>
 
             <div id="contact" className='mt-8 md:mt-16 text-xl md:text-3xl flex items-center justify-center gap-4 md:gap-10'>
-              <h2><a className='hover:text-gray-900' href="https://github.com/Sumit-004"><FaGithub /></a></h2>
-              <h2><a className='hover:text-gray-900' href="https://www.instagram.com/im_sumit004?igsh=azJxcjl5NWlraDRt"><FaInstagram /></a></h2>
-              <h2><a className='hover:text-gray-900' href=""><FaXTwitter /></a></h2>
-              <h2><a className='hover:text-gray-900' href=""><FaLinkedin /></a></h2>
+              <h2><a className='hover:text-zinc-900' href="https://github.com/Sumit-004"><FaGithub /></a></h2>
+              <h2><a className='hover:text-red-600' href="https://www.instagram.com/im_sumit004?igsh=azJxcjl5NWlraDRt"><FaInstagram /></a></h2>
+              <h2><a className='hover:text-zinc-900' href=""><FaXTwitter /></a></h2>
+              <h2><a className='hover:text-sky-700' href=""><FaLinkedin /></a></h2>
             </div>
           </div>
         </div>
@@ -39,26 +39,26 @@ const Footer = () => {
             <form action='https://formspree.io/f/mgvarbgy' method='POST' className="space-y-4">
               <div className='flex flex-col md:flex-row md:gap-4 space-y-4 md:space-y-0'>
                 <input 
-                  className='w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500'
+                  className='w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-600'
                   required
                   type="text" 
                   placeholder='Enter Your Name...' 
                   name='username' />
                 <input
-                  className='w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500'
+                  className='w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-600'
                   required
                   type="email" 
                   placeholder='xyz@gmail.com' 
                   name='email' />
               </div>
               <textarea 
-                className='w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500 min-h-[120px]'
+                className='w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-600 min-h-[120px]'
                 required
                 name="messeage" 
                 placeholder='Message'></textarea>
               <div className="flex justify-center">
                 <button 
-                  className='px-6 py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-full transition-colors duration-300'
+                  className='px-6 py-2 bg-sky-800 hover:bg-sky-700 text-white rounded-full transition-colors cursor-pointer duration-300'
                   type="submit">
                   Submit
                 </button>
