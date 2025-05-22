@@ -3,6 +3,7 @@
 *{
     font-family:'Lucida Grande',;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 body{
     background-color: #2E2E2E;
@@ -11,14 +12,7 @@ body{
     scroll-behavior: smooth;
     
 }
-/* #Project{
-    margin-left: 2rem;
-    object-fit: cover;
-    width: 95%;
-    height: 100vh;
-    /* opacity: 50%; */
-    /* background-image: url(./assets/header.png); }
-*/ 
+
 #Skills{
     position: relative;
     z-index: 1;
@@ -30,9 +24,9 @@ body{
     inset: 0;
     background-image: url(./assets/bgImg.webp);
     background-size: cover;
+    object-fit: cover;
     border-radius: 1rem;
     opacity: 50%;
     z-index: -1;
   }
 
-  /* bg-[url(./assets/bgImg.webp)]  */

@@ -24,22 +24,23 @@ const Header = () => {
     }
 
     return (
-        <header id="Arrow" className="bg-[#bbbab5] rounded-2xl text-zinc-800 flex items-center justify-between p-4 md:p-0 mx-8 md:h-25 relative">
+        <header id="Arrow" className=" rounded-2xl text-[#bbbab5] flex items-center justify-between p-4 md:p-0 mx-8 md:h-25 relative">
             <h1 className='text-2xl md:text-4xl font-bold ml-4 md:ml-20'>Portfolio</h1>
             
-            {/* Desktop Navigation */}
+            
             <nav className="hidden md:block">
-                <ul className='flex gap-8 text-xl items-center mr-20'>
-                    <li><a className='flex items-center gap-3 hover:text-gray-600' href="#About"><User />About Me</a></li>
-                    <li><a className='flex items-center gap-3 hover:text-gray-600' href="#Skills"><CodeXml />Skills</a></li>
-                    <li><a className='flex items-center gap-3 hover:text-gray-600' href="#Projects"><FolderOpenDot />Projects</a></li>
-                    <li><a className='flex items-center gap-3 hover:text-gray-600' href="#Footer"><Phone />Contact</a></li>
+                <ul className='flex gap-8 text-xl items-center mr-20' data-aos="fade-left"
+                data-aos-duration="2000">
+                    <li><a className='flex items-center gap-3 pb-2 md:hover:border-b-3 transition-all border-[#bbbab5]' href="#About"><User />About Me</a></li>
+                    <li><a className='flex items-center gap-3 pb-2 md:hover:border-b-3 transition-all border-[#bbbab5]' href="#Skills"><CodeXml />Skills</a></li>
+                    <li><a className='flex items-center gap-3 pb-2 md:hover:border-b-3 transition-all border-[#bbbab5]' href="#Projects"><FolderOpenDot />Projects</a></li>
+                    <li><a className='flex items-center gap-3 pb-2 md:hover:border-b-3 transition-all border-[#bbbab5]' href="#Footer"><Phone />Contact</a></li>
                 </ul>
             </nav>
 
-            {/* Mobile Menu Button */}
+            
             <button 
-                className="md:hidden p-2"
+                className="md:hidden p-2 cursor-pointer"
                 onClick={toggleMenu}
                 aria-label="Toggle menu"
             >
@@ -49,11 +50,11 @@ const Header = () => {
             {/* Mobile Dropdown Menu */}
             {isMobile && isMenuOpen && (
                 <div className="absolute top-full left-0 right-0 bg-[#bbbab5] rounded-b-2xl shadow-lg z-10">
-                    <ul className="flex flex-col gap-4 p-4 text-xl">
-                        <li><a className='flex items-center gap-3 hover:text-gray-600 hover:underline' href="" onClick={toggleMenu}><User />About Me</a></li>
-                        <li><a className='flex items-center gap-3 hover:text-gray-600' href="#Skills" onClick={toggleMenu}><Atom />Skills</a></li>
-                        <li><a className='flex items-center gap-3 hover:text-gray-600' href="#Projects" onClick={toggleMenu}><FolderOpenDot />Projects</a></li>
-                        <li><a className='flex items-center gap-3 hover:text-gray-600' href="#Footer" onClick={toggleMenu}><Phone />Contact</a></li>
+                    <ul className="flex flex-col gap-4 p-4 text-xl text-gray-800">
+                        <li><a className='flex items-center gap-3 hover:underline transition-all' href="" onClick={toggleMenu}><User />About Me</a></li>
+                        <li><a className='flex items-center gap-3 hover:underline transition-all' href="#Skills" onClick={toggleMenu}><Atom />Skills</a></li>
+                        <li><a className='flex items-center gap-3 hover:underline transition-all' href="#Projects" onClick={toggleMenu}><FolderOpenDot />Projects</a></li>
+                        <li><a className='flex items-center gap-3 hover:underline transition-all' href="#Footer" onClick={toggleMenu}><Phone />Contact</a></li>
                     </ul>
                 </div>
             )}

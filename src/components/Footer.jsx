@@ -8,12 +8,20 @@ import { IoIosMail } from "react-icons/io";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+
 const Footer = () => {
   return (
     <>
       <div id="Footer" className='flex flex-col md:flex-row items-center justify-center mt-20 text-white bg-neutral-700 min-h-[24rem] py-8'>
         <div className='w-full md:w-4/7 flex items-center justify-center p-4'>
-          <div className='w-full md:w-3/4 h-auto text-gray-700 bg-gray-300 p-4 md:p-7 rounded-xl'>
+          <div className='w-full md:w-3/4 h-auto text-gray-700 bg-[#bbbab5]  p-4 md:p-7 rounded-xl'>
             <h1 className='text-2xl md:text-4xl font-bold flex justify-center'>Contact</h1>
             <p className='text-base md:text-xl mt-4 md:mt-8 flex items-center gap-3'><MdLocalPhone />Phone: +91 9520410011</p>
             <p className='text-base md:text-xl mt-2 flex items-center gap-3'><IoIosMail />E-mail: sh.sumit2004@gmail.com</p>
@@ -27,37 +35,31 @@ const Footer = () => {
           </div>
         </div>
 
-        <div id="form" className='w-full md:w-3/7 mt-8 md:mt-0 md:border-l-3'>
-          <div className='h-auto w-full md:w-2/3 bg-gray-300 text-neutral-900 md:ml-12 rounded-2xl p-4 md:p-6 mx-auto'>
-            {/* <form action="https://formspree.io/f/xgvarbkp" method='POST'>
-           <input type="text" placeholder='Enter Your Comment....' required />
-           <input type="email" placeholder='Enter Your E-mail' required/>
-            <textarea placeholder="Leave a comment..." id="comment" className='overflow-hidden p-3 w-full min-h-[120px]' required></textarea>
-            <button type='button' className='flex items-center justify-center px-4 py-2 mt-3 rounded-2xl bg-violet-700 text-base md:text-xl text-white hover:bg-violet-500 cursor-pointer'>Send</button>
-            </form> */}
-            
+        <div id="form" className='p-4 w-full md:w-3/7 mt-8 md:mt-0 md:border-l-3'>
+          <div className='h-auto w-full md:w-2/3 bg-[#bbbab5]  text-neutral-900 md:ml-12 rounded-2xl p-4 md:p-6 mx-auto'>
+
             <form action='https://formspree.io/f/mgvarbgy' method='POST' className="space-y-4">
               <div className='flex flex-col md:flex-row md:gap-4 space-y-4 md:space-y-0'>
-                <input 
+                <input
                   className='w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-600'
                   required
-                  type="text" 
-                  placeholder='Enter Your Name...' 
+                  type="text"
+                  placeholder='Enter Your Name...'
                   name='username' />
                 <input
                   className='w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-600'
                   required
-                  type="email" 
-                  placeholder='xyz@gmail.com' 
+                  type="email"
+                  placeholder='xyz@gmail.com'
                   name='email' />
               </div>
-              <textarea 
+              <textarea
                 className='w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-600 min-h-[120px]'
                 required
-                name="messeage" 
+                name="messeage"
                 placeholder='Message'></textarea>
               <div className="flex justify-center">
-                <button 
+                <button
                   className='px-6 py-2 bg-sky-800 hover:bg-sky-700 text-white rounded-full transition-colors cursor-pointer duration-300'
                   type="submit">
                   Submit
@@ -66,9 +68,9 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <p className='fixed bottom-20 right-14 text-4xl text-white'>
+        <p className='fixed md:bottom-20 bottom-10 md:right-14 right-1.5 text-4xl text-white'>
 
-          <a className='hover:text-amber-200 scroll-smooth ' href="Arrow"> <IoIosArrowDropupCircle /> </a>
+          <h2 className='hover:text-gray-400 transition-all cursor-pointer' onClick={scrollToTop}><IoIosArrowDropupCircle /></h2>
 
         </p>
       </div>

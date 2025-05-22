@@ -11,7 +11,8 @@ import { SiTailwindcss } from "react-icons/si";
 const Skills = () => {
   return (
 
-    <div id="Skills" className='ml-8 m-[2rem] flex flex-col md:flex-col items-center justify-center md:h-dvh h-auto md:ml-8 md:m-[2rem]'>
+    <div id="Skills" className='m-[1rem] flex flex-col md:flex-col items-center justify-center md:h-dvh h-auto md:ml-8 md:m-[2rem] p-4'>
+      <h2 className="text-4xl font-bold mb-6 text-zinc-200">Skills</h2>
       <div className="w-full md:w-1/2 md:h-dvh mt-20 md:mt-20">
         <div className='flex flex-col md:flex-row md:items-center md:justify-center gap-8 md:gap-14'>
           <h4 className='font-bold text-gray-100 text-4xl md:text-4xl sm:6xl flex items-center gap-2'><FaHtml5 className='text-red-800' />HTML</h4>
