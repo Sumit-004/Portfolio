@@ -15,7 +15,7 @@ const About = () => {
             <img
               src= {img} 
               alt="Profile"
-              className="rounded-2xl shadow-lg w-full h-auto"
+              className="rounded-2xl shadow-lg w-full h-auto filter drop-shadow-xl"
             />
           </div>
           <div  data-aos='fade-left' data-aos-duration='2000'>

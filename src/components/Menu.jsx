@@ -24,9 +24,10 @@ const Menu = () => {
                 <div className='w-3/4 sm:w-1/2 md:w-1/3 flex justify-center order-1 md:order-2' data-aos="fade-left"
                 data-aos-duration="2000">
                     <img 
+                    // 33,83,244
                         src={img} 
                         alt="Profile" 
-                        className='object-cover w-full max-w-[300px] h-auto rounded-full border-4 border-white shadow-lg'
+                        className='object-cover w-full max-w-[300px] h-auto rounded-full border-4 border-white filter hover:drop-shadow-[20px_14px_22px_rgba(118,121,129,2)] transition-all duration-300'
                     />
                 </div>
                 
