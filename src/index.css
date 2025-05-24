@@ -1,4 +1,12 @@
 @import "tailwindcss";
+@layer utilities {
+  .text-color {
+    background: -webkit-linear-gradient(20deg,#4b90ff,#c73528);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   }
+}
+
 
 *{
     font-family:'Lucida Grande',;
@@ -30,3 +38,4 @@ body{
     z-index: -1;
   }
 
+  

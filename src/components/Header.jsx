@@ -25,7 +25,7 @@ const Header = () => {
 
     return (
         <header id="Arrow" className=" rounded-2xl text-[#bbbab5] flex items-center justify-between p-4 md:p-0 mx-8 md:h-25 relative">
-            <h1 className='text-2xl md:text-4xl font-bold ml-4 md:ml-20'>Portfolio</h1>
+            <h1 className='text-color text-2xl md:text-[50px] font-bold ml-4 md:ml-20'>Portfolio</h1>
             
             
             <nav className="hidden md:block">
