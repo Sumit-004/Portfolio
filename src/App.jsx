@@ -12,6 +12,7 @@ const App = () => {
   useEffect(() => {
     Aos.init();
   }, [])
+
   
   return (
     <div>
