@@ -1,14 +1,14 @@
 import React from 'react'
 import pro1 from '../assets/qrproject.png'
 import pro2 from '../assets/gIcon.png'
-import pro3 from '../assets/logo1.png'
+import pro3 from '../assets/mainimg.jpg'
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projects = [
     {
       title: "QR Code Generator",
-      description: "This Website generates a QR code based on the inputted text or URL.",
+      description: "This Website generates QR code by inputted text or URL.",
       tags: ["React", "API", "JavaScript"],
       github: "https://github.com/Sumit-004/QR-Generator",
       demo: "",
@@ -28,7 +28,7 @@ const projects = [
       tags: ["React", "Redux", "Tailwind"],
       github: "https://github.com/Sumit-004/Food-Delivery",
       demo: "",
-      image: pro1,
+      image: pro3,
     },
   
   ];
@@ -39,9 +39,9 @@ const Projects = () => {
     return (
 
         
-        <section className="bg-[#bbbab5] my-4 min-h-[400px] md:h-[500px] mx-4 md:m-[2rem] md:mr-8 rounded-2xl" id="Projects">
-        <div className="md:max-w-7xl max-w-4xl m-2">
-          <h2 className="md:text-4xl text-3xl font-bold mb-8 text-center text-gray-800 dark:text-zinc-800">
+        <section className=" my-4 md:min-h-[550px] mx-4 p-4 md:m-[2rem] md:mr-8 rounded-2xl" id="Projects">
+        <div className="md:max-w-7xl max-w-4xl m-2 ">
+          <h2 className="md:text-4xl text-3xl font-bold m-8 text-center text-gray-400 dark:text-gray-200">
             🚀 Projects
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -54,12 +54,12 @@ const Projects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 data-aos='flip-left'
-                data-aos-duration='1500'>
+                data-aos-duration='2000'>
                 
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-fit md:h-48 h-38 ml-3.5"
+                  className="w-fit md:h-48 h-30 ml-3.5"
                 />
                 <div className="p-6">
                   <h3 className="md:text-2xl text-xl font-semibold text-gray-800 dark:text-white">

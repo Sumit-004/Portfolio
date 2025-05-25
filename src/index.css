@@ -3,6 +3,7 @@
   .text-color {
     background: -webkit-linear-gradient(20deg,#4b90ff,#c73528);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
    }
 }
@@ -35,6 +36,24 @@ body{
     object-fit: cover;
     border-radius: 1rem;
     opacity: 50%;
+    z-index: -1;
+  }
+
+#Projects{
+    position: relative;
+    z-index: 1;
+    
+}
+
+  #Projects::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(./assets/header.png);
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 1rem;
+    opacity: 40%;
     z-index: -1;
   }
 
