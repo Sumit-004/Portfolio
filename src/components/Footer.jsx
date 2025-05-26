@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
         <p className='fixed md:bottom-20 bottom-10 md:right-14 right-1.5 text-4xl text-white'>
 
-          <h2 className='hover:text-gray-400 transition-all cursor-pointer' onClick={scrollToTop}><IoIosArrowDropupCircle /></h2>
+          <h2 className='hover:text-gray-400 transition-all cursor-pointer z-2' onClick={scrollToTop}><IoIosArrowDropupCircle /></h2>
 
         </p>
       </div>

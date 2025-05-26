@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {Phone, FolderOpenDot, Atom, User, Menu, X,CodeXml} from 'lucide-react'
 // import { BsPen  } from "react-icons/bs";
+import {motion,useScroll} from 'motion/react'
 
 
 const Header = () => {
@@ -23,9 +24,17 @@ const Header = () => {
         setIsMenuOpen(!isMenuOpen)
     }
 
+    const scroll=useScroll().scrollYProgress
+
     return (
+        <>
+        <motion.div
+        style={{
+            scaleX:scroll
+        }} 
+        className='w-full fixed top-0 origin-left z-10 h-0.5 bg-white'></motion.div>
         <header id="Arrow" className=" rounded-2xl text-[#bbbab5] flex items-center justify-between p-4 md:p-0 mx-8 md:h-25 relative">
-            <h1 className='text-color text-2xl md:text-[50px] font-bold ml-4 md:ml-20'>Portfolio</h1>
+            <h1 className='text-color text-3xl md:text-[50px] font-bold ml-4 md:ml-20'>Portfolio</h1>
             
             
             <nav className="hidden md:block">
@@ -59,6 +68,7 @@ const Header = () => {
                 </div>
             )}
         </header>
+        </>
     )
 }
 

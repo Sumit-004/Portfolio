@@ -28,7 +28,7 @@ const Menu = () => {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
                         </span>
-                        Available for work
+                        Available For Hire
                     </h1>
                     <h1 className='text-3xl md:text-6xl font-bold'>
                         <TextChange />
