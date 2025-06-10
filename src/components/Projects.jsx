@@ -27,7 +27,7 @@ const projects = [
       description: "This Website Allows users To Order Food Online",
       tags: ["React", "Redux", "Tailwind"],
       github: "https://github.com/Sumit-004/Food-Delivery",
-      demo: "https://foodiehubbysumit.netlify.app/#order",
+      demo: "https://foodiehubbysumit.netlify.app/",
       image: pro3,
     },
   

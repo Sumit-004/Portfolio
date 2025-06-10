@@ -56,5 +56,22 @@ body{
     opacity: 40%;
     z-index: -1;
   }
-
+.text{
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid;
+  animation: typing 2.5s steps(20) infinite alternate,
+  cursor .4s step-end infinite alternate;
+}
+@keyframes typing {
+  from{
+    width: 0;
+  }
+}
+@keyframes cursor {
+  50%{
+    border-color: transparent;
+  }
+}
   

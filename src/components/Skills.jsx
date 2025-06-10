@@ -42,15 +42,15 @@ const Skills = () => {
   return (
 
     <div id="Skills" className='m-[1rem] flex flex-col md:flex-col items-center justify-center md:h-dvh h-auto md:ml-8 md:m-[2rem] p-4'>
-      <h2 className="text-4xl font-bold mb-6 text-zinc-200">Technical Skills</h2>
-      <div className="w-full md:w-1/2 md:h-dvh mt-20 md:mt-20">
-        <div className='grid md:grid-cols-3 md:grid-rows-2  grid-cols-2 grid-rows-3 md:gap-x-20 gap-x-10 gap-y-8'>
+      <h2 className="md:text-4xl text-3xl font-bold mb-12 md:mb-18 text-zinc-200">Technical Skills</h2>
+      <div className="w-full md:w-1/2 md:h-dvh">
+        <div className='grid md:grid-cols-3 md:grid-rows-2  grid-cols-2 grid-rows-3 md:gap-x-20 gap-x-5 gap-y-8'>
 
           {skill.map((skill, index) => (
             <div key={index}
               data-aos="fade-up"
               data-aos-duration="500"
-              className='bg-slate-800 h-[60px] w-[140px] md:h-[90px] md:w-[220px] rounded-xl md:rounded-2xl md:text-2xl text-[15px] flex md:gap-4 gap-2 items-center justify-center text-white hover:scale-105 duration-300 transition-all cursor-pointer'>{skill.icon}{skill.title}</div>
+              className='bg-slate-800 h-[60px] w-[130px] md:h-[90px] md:w-[220px] rounded-xl md:rounded-2xl md:text-2xl text-[15px] flex md:gap-4 gap-1 items-center justify-center text-white hover:scale-105 duration-300 transition-all cursor-pointer'>{skill.icon}{skill.title}</div>
           ))}
         </div>
       </div>
