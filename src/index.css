@@ -56,6 +56,8 @@ body{
     opacity: 40%;
     z-index: -1;
   }
+
+/* Animated Text */
 .text{
   width: 100%;
   white-space: nowrap;

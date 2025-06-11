@@ -78,26 +78,26 @@ const Footer = () => {
 
 
         {/* Mail Section */}
-        <div id="form" className='p-4 w-full md:w-3/7 mt-8 md:mt-0 md:border-l-3'>
+        <div id="form" className='p-4 w-full md:w-3/7 mt-2 md:mt-0 md:border-l-3'>
           <div className='h-auto w-full md:w-2/3 bg-gray-900  text-neutral-100 md:ml-12 rounded-2xl p-4 md:p-6 mx-auto'>
 
             <form action='https://formspree.io/f/mgvarbgy' method='POST' className="space-y-4">
-              <div className='flex flex-col md:flex-row md:gap-4 space-y-4 md:space-y-0'>
+              <div className='flex flex-col md:flex-row md:gap-4 space-y-2 md:space-y-0'>
                 <input
-                  className='w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-600'
+                  className='w-full md:p-3 p-2 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-600'
                   required
                   type="text"
                   placeholder='Enter Your Name...'
                   name='username' />
                 <input
-                  className='w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-600'
+                  className='w-full md:p-3 p-2 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-600'
                   required
                   type="email"
                   placeholder='xyz@gmail.com'
                   name='email' />
               </div>
               <textarea
-                className='w-full p-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-600 min-h-[120px]'
+                className='w-full md:p-3 p-2 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-600 min-h-[120px]'
                 required
                 name="message"
                 placeholder='Message'></textarea>
@@ -111,11 +111,9 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <p className='fixed md:bottom-20 bottom-10 md:right-14 right-1.5 text-4xl text-white z-100'>
-
+        <span className='fixed md:bottom-20 bottom-10 md:right-14 right-1.5 text-4xl text-white z-100'>
           <h2 className='hover:text-gray-400 transition-all cursor-pointer' onClick={scrollToTop}><IoIosArrowDropupCircle /></h2>
-
-        </p>
+        </span>
       </div>
       <div className='text-white bg-neutral-700 flex items-center justify-center p-4 text-sm md:text-base text-center'><p>Copyright 2004-2025 by Sumit. All Rights Reserved. This Portfolio is Powered by Sumit.</p></div>
 
