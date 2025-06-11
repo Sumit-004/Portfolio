@@ -96,7 +96,7 @@ const Header = () => {
                             animate="visible"
                             exit="exit"
                             variants={dropdownVariants}>
-                            <ul className="flex flex-col gap-4 p-4 text-xl text-gray-200">
+                            <ul className="flex flex-col gap-4 p-7 text-xl text-gray-200">
                                 <li data-aos="fade-right"
                                     data-aos-duration="500"
                                     data-aos-delay="100"><a className='flex items-center gap-3 hover:text-red-400 transition-all'  href="#About" onClick={toggleMenu}><User className='text-blue-600' />About Me</a></li>
